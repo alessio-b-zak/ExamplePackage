@@ -1,7 +1,7 @@
 Package: ExamplePackage
 Type: Package
 Title: A Package to show I know how to make a package
-Version: 0.1.1
+Version: 0.2.1
 Author: Alessio Zakaria
 Maintainer: Alessio Zakaria <az15360@my.bristol.ac.uk>
 Description: This package currently exports two different sorting algorithms: quicksort and mergesort
