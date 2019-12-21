@@ -16,6 +16,6 @@ Returns a sorted version of `x`
 Recursively sorts a list by selecting a random pivot
 }
 \examples{
-quicksort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
-quicksort(5,3,2,4,2)) returns c(2,2,3,4,5)
+quicksort(c(1,3,2,4,2))
+quicksort(5,3,2,4,2))
 }

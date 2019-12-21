@@ -16,5 +16,5 @@ A sorted list
 Sorts a list recursively using the mergesort algorithm
 }
 \examples{
-mergesort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
+mergesort(c(1,3,2,4,2))
 }
