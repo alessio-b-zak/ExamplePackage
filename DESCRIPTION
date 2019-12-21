@@ -1,0 +1,11 @@
+Package: ExamplePackage
+Type: Package
+Title: A Package to show I know how to make a package
+Version: 0.1.1
+Author: Alessio Zakaria
+Maintainer: Alessio Zakaria <az15360@my.bristol.ac.uk>
+Description: This package currently exports two different sorting algorithms: quicksort and mergesort
+License: WTFPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
