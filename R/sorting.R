@@ -38,7 +38,7 @@ merge <- function(x, y) {
 #' @export
 #'
 #' @examples
-#' mergesort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
+#' mergesort(c(1,3,2,4,2))
 mergesort <- function(x) {
   n <- length(x)
   if (n > 1) {
@@ -60,8 +60,8 @@ mergesort <- function(x) {
 #' @export
 #'
 #' @examples
-#' quicksort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
-#' quicksort(5,3,2,4,2)) returns c(2,2,3,4,5)
+#' quicksort(c(1,3,2,4,2))
+#' quicksort(5,3,2,4,2))
 quicksort <- function(x) {
   n <- length(x)
 
