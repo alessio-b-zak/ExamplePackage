@@ -61,7 +61,7 @@ mergesort <- function(x) {
 #'
 #' @examples
 #' quicksort(c(1,3,2,4,2))
-#' quicksort(5,3,2,4,2))
+#' quicksort(c(5,3,2,4,2))
 quicksort <- function(x) {
   n <- length(x)
 
