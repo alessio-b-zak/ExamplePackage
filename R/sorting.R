@@ -38,14 +38,13 @@ merge <- function(x, y) {
 #' @export
 #'
 #' @examples
-#' mergesort(c(1,3,2,4,2,))
+#' mergesort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
 mergesort <- function(x) {
   n <- length(x)
   if (n > 1) {
     split_point <- floor(n/2)
     lower_list_merged <- mergesort(x[1:split_point])
     upper_list_merged <- mergesort(x[(split_point+1):n])
-    print(lower_list_merged)
     return(merge(lower_list_merged, upper_list_merged))
   }
   else {
@@ -53,3 +52,34 @@ mergesort <- function(x) {
   }
 }
 
+#' Recursively sorts a list by selecting a random pivot
+#'
+#' @param x  A list
+#'
+#' @return Returns a sorted version of `x`
+#' @export
+#'
+#' @examples
+#' quicksort(c(1,3,2,4,2)) returns c(1,2,2,3,4)
+quicksort <- function(x) {
+  n <- length(x)
+
+  if(n >1) {
+    pivot <- sample.int(n, 1)
+    pivot_element <- x[pivot]
+
+    x <- x[-pivot]
+    upper_list <- x[x>pivot_element]
+
+    lower_list <- x[x<=pivot_element]
+    sorted_lower <- quicksort(lower_list)
+    sorted_upper <- quicksort(upper_list)
+
+    final_list <- c(sorted_lower, pivot_element, sorted_upper)
+  }
+  else {
+    final_list <- x
+  }
+
+  return(final_list)
+}
